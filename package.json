@@ -1,0 +1,22 @@
+{
+  "name": "ngstars",
+  "version": "1.0.0",
+  "description": "This application is E-commerce based application to perform CRUD operations using AngulasJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zayan-nadeem/NgStars.git"
+  },
+  "author": "ZayanNadeem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zayan-nadeem/NgStars/issues"
+  },
+  "homepage": "https://github.com/zayan-nadeem/NgStars#readme",
+  "dependencies": {
+    "angular": "^1.6.4"
+  }
+}
