@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Zapp</title>
+	<title>Zayan</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/angular-material/angular-material.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/mdi/css/materialdesignicons.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body ng-app="ngStars" ng-controller="starsCtrl">
-<h1>{{message}}</h1>
-</body>
-<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
-<script type="text/javascript" src="scripts/app.js"></script>
+<body ng-app="ngStars">
+
+	<!--div ng-controller = "starsCtrl">
+
+		{{message}}
+		<br>
+
+		<input type="text" placeholder="Enter Your Name" ng-model="name.lastName"> </input>
+		<input type="text" placeholder="Enter Your Name" ng-model="name.firstName"> </input>
+		<br>
+		<br>
+		<h1>{{name.lastName}}</h1>
+		<h1>{{name.firstName}}</h1>
+	</div-->
+	<md-toolbar>
+   	 <div class="md-toolbar-tools">
+   		 <p><strong>ngStars</strong></p>
+   		 <md-button>
+   			 <md-icon class="mdi mdi-plus-circle"></md-icon>
+   			 New Star
+   		 </md-button>
+   	 </div>
+    </md-toolbar>
+
+
+    <md-content class="md-padding" layout="row" layout-wrap layout-align="center end">
+   	 <md-card flex="40">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Starsinthesky.jpg">  
+		<md-card-content>
+   			 <div class="star-info">
+   				 <h2 class="md-title">First Star</h2>
+   				 <h3>$100000</h3>
+   				 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   				 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   				 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   				 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   				 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+   				 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   			 </div>
+   		 </md-card-content> 		 
+   	 </md-card>
+ </md-content>
+
+	<script type="text/javascript" src="node_modules/angular/angular.js"></script> 
+	<script type="text/javascript" src="node_modules/angular-animate/angular-animate.js"></script>
+	<script type="text/javascript" src="node_modules/angular-aria/angular-aria.js"></script>
+	<script type="text/javascript" src="node_modules/angular-material/angular-material.js"></script>
+	<script type="text/javascript" src="scripts/app.js"></script>
+	<script type="text/javascript" src="components/stars.ctrl.js"></script>
+</body> 
 </html>

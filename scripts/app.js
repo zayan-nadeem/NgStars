@@ -1,5 +1,7 @@
-angular.module('ngStars', [])
+var app = angular.module('ngStars',['ngMaterial']); 
 
-.controller('starsCtrl', function ($scope) {
-	$scope.message = "HELLO WORLD!!";
-})
+app.config(function ($mdThemingProvider) {
+	$mdThemingProvider.theme('default')
+	.primaryPalette('teal')
+	.accentPalette('orange');
+});
