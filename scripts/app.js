@@ -5,11 +5,3 @@ app.config(function ($mdThemingProvider) {
 	.primaryPalette('teal')
 	.accentPalette('orange');
 });
-
-app.controller('starsCtrl', function($scope){
-   		 $scope.star = {
-   			 title: "First star",
-   			 distance: "1000000 mile",
-   			 description: "This is the first star"
-   		 }
-   	 });
